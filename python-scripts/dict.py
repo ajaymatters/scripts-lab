@@ -7,7 +7,3 @@ for x in mydict:
 	print()
 	for key,value in x.items():
 		print(key,value)
-# print(mydict)
-# print(list3[0][0]['is114'])
-
-
