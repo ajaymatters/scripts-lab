@@ -64,3 +64,10 @@ function dispGrade_sub2() {
 
 	}
 }
+
+function total(){
+	var x = parseInt(document.getElementById("sub1").value);
+	var y = parseInt(document.getElementById("sub2").value);
+
+	document.getElementById("total").innerHTML = x + y
+}
