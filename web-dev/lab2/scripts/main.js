@@ -3,7 +3,7 @@
 function dispGrade_sub1() {	
 
 		var x = parseInt(document.getElementById("sub1").value);
-		
+
 		if (x >= 90) {
 			document.getElementById("sub1_grade").innerHTML = "S"
 		}
@@ -17,7 +17,7 @@ function dispGrade_sub1() {
 		}
 
 		else {
-			document.getElementById("sub1_grade").innerHTML = "Fail" + x
+			document.getElementById("sub1_grade").innerHTML = "Fail"
 		}
 
 }
