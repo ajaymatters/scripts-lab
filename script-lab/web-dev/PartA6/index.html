@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		Num1:<input type="text" name="" id="num1">
+		Num2:<input type="text" name="" id="num2"><br>
+		<input type="radio" name="Add" value="addi" id="add" onclick="res(0)"> Add
+		<input type="radio" name="Add" value="subt" id="sub" onclick="res(1)"> Subtract
+		<input type="radio" name="Add" value="mult" id="mul" onclick="res(2)"> Multiply
+		<input type="radio" name="Add" value="divi" id="div" onclick="res(3)"> Divide
+
+	</form>
+	<p id="result"></p>
+</body>
+
+<script type="text/javascript">
+
+	function res(id) {
+		var x = parseFloat(document.getElementById('num1').value);
+		var y = parseFloat(document.getElementById('num2').value);
+		if (isNaN(x) || isNaN(y)) {
+			document.getElementById('result').innerHTML = 'Enter valid numbers';
+		}
+		else{
+			if(id == 0){
+				document.getElementById('result').innerHTML = x + y;
+			}
+			else if (id == 1) {
+				document.getElementById('result').innerHTML = x - y;
+			}
+			else if (id == 2) {
+				document.getElementById('result').innerHTML = x * y;
+			}
+			else if (id == 3) {
+				if (y == 0) {
+					document.getElementById('result').innerHTML = 'Division by zero is invalid';
+				}
+				else
+					document.getElementById('result').innerHTML = x / y;
+			}
+		}
+	}
+	
+</script>
+</html>

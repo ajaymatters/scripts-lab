@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Country</th>
+			<th>Title</th>
+			<th>Year</th>
+		</tr>
+		<tr>
+			<td id="p1"></td>
+			<td id="c1"></td>
+			<td id="t1"></td>
+			<td id="y1"></td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+	</table>
+
+</body>
+<script type="text/javascript">
+	var authors = {"Person1":{"name":"abc","country":"","title":"life"}, "Person2":{"name":"def","country":"","title":"love"}, "Person3":{"name":"geh","country":"","title":"power"}, "Person4":{"name":"xyz","country":"","title":"pqr"}};
+	for (var i = 0; i < authors.length; i++) {
+		document.getElementById('p'+i).innerHTML = authors["Person"+i].name;
+	}
+</script>
+</html>
